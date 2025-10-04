@@ -1,0 +1,5 @@
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+[user]
+	name = hoangnguyen-ca
+	email = hoang.viet.nguyen@outlook.com
