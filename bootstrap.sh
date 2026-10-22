@@ -29,6 +29,7 @@ brew bundle --file="./Brewfile"
 source ./scripts/java.sh
 source ./scripts/node.sh
 source ./scripts/go.sh
+source ./scripts/codex.sh
 # Symlink dotfiles
 echo "Symlinking dotfiles..."
 DOTFILES="$HOME/.dotfiles"

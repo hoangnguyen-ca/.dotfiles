@@ -71,7 +71,8 @@ The bootstrap performs the following operations, in order:
 5. Installs nvm using the v0.40.3 installer if absent, adds nvm and completion initialization, installs the latest Node release if nvm finds none, and installs `tree-sitter-cli` globally through npm.
 6. Installs Go 1.25.1 for Linux amd64 under `/usr/local/go` if no `go` command is found, and appends its bin directory to the shell PATH. Installing Go replaces any existing `/usr/local/go` directory.
 7. Adds a command to source this repository's `.bashrc`, providing `ll`, `gs`, `gp`, and `gd` aliases.
-8. Links `~/.config/nvim` to this repository's Neovim configuration and `~/.gitconfig` to its Git configuration.
+8. Sets up shared Codex preferences using `scripts/codex.sh`, backing up existing configuration before linking. See [.codex/README.md](.codex/README.md) for details and optional instructions/custom skills.
+9. Links `~/.config/nvim` to this repository's Neovim configuration and `~/.gitconfig` to its Git configuration.
 
 The script stops on most errors. If it fails, resolve the reported problem and rerun it from this directory. It checks for existing initialization lines and installations, but rerunning still upgrades Ubuntu packages, updates Homebrew, and runs package installation commands.
 
@@ -151,3 +152,7 @@ The configuration provides tab and pane shortcuts and smart-splits integration w
 | `.gitconfig` | Git identity and Windows credential helper |
 | `.config/nvim/` | LazyVim configuration and plugin lockfile |
 | `.wezterm.lua` | Optional WezTerm configuration |
+
+## Codex
+
+See [.codex/README.md](.codex/README.md) for portable settings, backup behavior, and standalone installation. Authentication and local Codex state are not tracked.

@@ -1,0 +1,8 @@
+# Shared Codex preferences. Keep credentials and machine-specific paths local.
+model = "gpt-6.1-sol"
+model_reasoning_effort = "low"
+
+[desktop]
+followUpQueueMode = "steer"
+runCodexInWindowsSubsystemForLinux = true
+integratedTerminalShell = "wsl"

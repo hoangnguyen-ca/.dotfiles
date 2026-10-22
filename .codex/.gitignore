@@ -1,0 +1,8 @@
+# Only explicitly maintained configuration belongs in this directory.
+/*
+!/.gitignore
+!/README.md
+!/config.toml
+!/AGENTS.md
+!/skills/
+/skills/.system/
